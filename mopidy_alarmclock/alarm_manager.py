@@ -105,7 +105,7 @@ class AlarmManager(object):
 
         self.core.playback.play()
         
-        self.os.system('python ~/BulbON.py')
+        os.system('python /usr/bin/BulbON.py')
 
         self.reset()
         self.state = states.DISABLED
