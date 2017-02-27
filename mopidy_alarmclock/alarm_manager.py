@@ -104,6 +104,8 @@ class AlarmManager(object):
         self.adjust_volume(self.volume, self.volume_increase_seconds, 0)
 
         self.core.playback.play()
+        
+        os.system('python /usr/bin/BulbON.py')
 
         self.reset()
         self.state = states.DISABLED
